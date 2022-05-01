@@ -1,6 +1,1 @@
 streamlit
-sympy
-<<<<<<< HEAD
-=======
-random
->>>>>>> 1abab3dca5e6ef324a1ac1de1980aaa358e26650
