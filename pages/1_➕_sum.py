@@ -8,7 +8,7 @@ st.set_page_config(page_title='Nombres Aléatoires', page_icon=':game_die:', lay
 
 st.markdown('# Nombres :game_die:')
 
-columns = st.columns([1.5, 10])
+columns = st.columns([2, 10])
 
 with columns[0]:
     digits = st.number_input('# Chiffres', min_value=1, value=1, step=1)
