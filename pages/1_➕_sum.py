@@ -11,13 +11,20 @@ st.markdown('# Nombres :game_die:')
 columns = st.columns([1.5, 10])
 
 with columns[0]:
-    n = st.number_input('Max', min_value=2, value=100, step=10)
+    digits = st.number_input('# Chiffres', min_value=1, value=1, step=1)
     refresh_button = st.button('Rafraîchir')
 
 if refresh_button:
-    html_header = '<h1 style="font-size:150px">' + str(generate_random_num(n)) + '</h1>'
+
+    left_operand = str(generate_random_num_digits(digits))
+    right_operand = str(generate_random_num_digits(digits))
+    
+    
     with columns[1]:
-        st.markdown(html_header, unsafe_allow_html=True)
+        st.latex('\Huge' + left_operand + '+' + right_operand)
+        # st.markdown(html_header, unsafe_allow_html=True)
+        # st.markdown('# {str(generate_random_num(n))} :x:')
+        
   
 
             
