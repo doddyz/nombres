@@ -12,7 +12,7 @@ st.markdown('# Nombres :game_die:')
 columns = st.columns([2, 10])
 
 with columns[0]:
-    digits = st.number_input('# Chiffres', min_value=2, max_value=4, step=1)
+    digits = st.number_input('# Chiffres', min_value=1, max_value=4, step=1)
     refresh_button = st.button('Rafraîchir')
 
 if refresh_button:
@@ -22,7 +22,7 @@ if refresh_button:
     
     
     with columns[1]:
-        st.latex('\Huge' + left_operand + '+' + right_operand)        
+        st.latex('\Huge' + left_operand + '*' + right_operand)        
   
 
             
